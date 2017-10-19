@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 	<meta name="applicable-device" content="mobile">
-	<title>注册个人信息</title>
+	<title>注册下级代理商信息</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/lCalendar.css">
 </head>
 <body>
 	<div class="head">
-		<a href="javascript:history.go(-1)"></a>注册个人信息
+		<a href="javascript:history.go(-1)"></a>注册下级代理商信息
 	</div>
 	<div class="hd-img">
 		<div class="img"></div>
 	</header>
-	<form action="" id="form" class="forms">
+	<form action="" id="form-d" class="forms">
 		<div class="row">
 			<p class="fl row_l">昵称</p> 
 			<p class="fl margin"><input type="text" class="nic font" placeholder="请输入您的昵称"></p>
@@ -39,7 +39,7 @@
 		</div>
 		<div class="row">
 			<p class="fl row_l">出生年月</p>
-			<p class="fl margin"><input id="date-a" class="xuan" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" placeholder="请输入您的出生年月" /></p>
+			<p class="fl margin"><input id="date-e" class="xuan" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" placeholder="请输入您的出生年月" /></p>
 		</div>
 		<div class="row">
 			<p class="fl row_l">手机</p>
@@ -59,19 +59,29 @@
 		</div>
 		<div class="row" style="position: relative;">
 			<p class="fl row_l">身份</p> 
-			<select name="" id="sel-a" class="fl margin">
-				<option value="">请选择身份</option>
-			</select>
+			<p class="fl margin" style="color: #ccc">代理商 (不可更改)</p>
 		</div>
 		<div class="row" style="position: relative;">
 			<p class="fl row_l">等级</p> 
 			<select name="" id="sel-b" class="fl margin">
-				<option value="">请选择等级</option>
+				<option value="">二级代理</option>
+				<option value="">特级代理</option>
+				<option value="">一级代理</option>
+				<option value="">预备总理</option>
+				<option value="">总代理</option>
 			</select>
 		</div>
 		<div class="row" style="background-color: #EFEFEF;">
 			<p class="fl row_l">我的ID</p> 
-			<p class="fl margin">WP-13577895430</p>
+			<p class="fl margin" style="color: #888">WP-13577895430</p>
+		</div>
+		<div class="row" style="background-color: #EFEFEF;">
+			<p class="fl row_l">推荐人ID</p> 
+			<p class="fl margin" style="color: #888">WP-13577895430</p>
+		</div>
+		<div class="row" style="background-color: #EFEFEF;">
+			<p class="fl row_l">与推荐人关系</p> 
+			<p class="fl margin" style="color: #888">推荐人下级代理</p>
 		</div>
 		<div class="row no">
 			<p class="row_l">个性签名</p> 
@@ -91,33 +101,8 @@
 <script>
 	var calendar = new lCalendar();
 	calendar.init({
-		'trigger': '#date-a',
+		'trigger': '#date-e',
 		'type': 'date'
 	});
-
-	var select = document.getElementsByTagName('select');
-	var j = {
-		'代理商':{
-			特约代理:'a',
-			二级代理:'b',
-			一级代理:'c',
-			预备代理:'d',
-			总代理:'e'
-		},
-		'买家':{
-			普通买家:'a',
-			特约买家:'b'
-		},
-	};
-	for(i in j){
-		select[0].add(new Option(i,i));
-	}
-	select[0].onchange = function(){
-		select[1].length=1;
-		var a = this.value;
-		for(q in j[a]){
-			select[1].add(new Option(q,q));
-		}
-	}
 </script>
 </html>

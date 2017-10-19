@@ -318,49 +318,49 @@ html{font-size: 100px;}
     font-size: 0.16rem;
     font-family: '微软雅黑';
 }
-#form{
+.forms{
 	width: 90%;
 	margin: 0 auto;
 }
-#form .row{
+.forms .row{
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 	padding: 0.1rem 0;
 	overflow: hidden;
 }
-#form .no{
+.forms .no{
 	border-bottom: 0;
 	position: relative;
 }
-#form .margin{
+.forms .margin{
 	width: 70%;
 	font-size: 0.16rem;
 }
-#form .row_l{
+.forms .row_l{
 	width: 30%;
 	font-size: 0.16rem;
 	font-weight: bold;
 }
-#form .nic,.username,.prov,.ident,.phone,.email,.contact,.weChat{
+.forms .nic,.username,.prov,.ident,.phone,.email,.contact,.weChat{
 	width: 90%;
 	border: 0;
 	background-color: #fff;
 }
-#form .male{
+.forms .male{
 	position: absolute;
 	left: 0;
 	top: 0.02rem;
 	z-index: 10;
 	opacity: 0;
 }
-#form .female{
+.forms .female{
 	position: absolute;
 	left: 35%;
 	top: 0.02rem;
 	z-index: 10;
 	opacity: 0;
 }
-#form textarea{
+.forms textarea{
 	outline: none;
 	background-color: #EFEFEF;
 	border: 1px solid #ccc;
@@ -370,14 +370,14 @@ html{font-size: 100px;}
 	font-family: '微软雅黑';
 	padding: 0.05rem;
 }
-#form .word{
+.forms .word{
 	color: #979797;
 	font-size: 0.14rem;
 	position: absolute;
 	right: 0.1rem;
-	bottom: 0.35rem;
+	bottom: 0.2rem;
 }
-#form .submit{
+.forms .submit{
 	display: block;
 	width: 60%;
 	margin: 0 auto 0.3rem;
@@ -392,51 +392,51 @@ html{font-size: 100px;}
 	letter-spacing: 0.1rem;
 	border-radius: 0.03rem;
 }
-#form .row i{
+.forms .row i{
 	width: 0.2rem;
 	height: 0.2rem;
 	display: inline-block;
 	position: absolute;
 	z-index: 5;
 }
-#form .rela{
+.forms .rela{
 	position: relative;
 }
-#form .row i.r-man{
+.forms .row i.r-man{
 	left: 0;
 	background: url(../img/woman.png) no-repeat;
 	background-size: cover;
 }
-#form .row i.r-woman{
+.forms .row i.r-woman{
 	left: 35%;
 	background: url(../img/woman.png) no-repeat;
 	background-size: cover;
 }
-#form .row label.boy{
+.forms .row label.boy{
 	position: absolute;
 	left: 5%;
 }
-#form .row label.girl{
+.forms .row label.girl{
 	position: absolute;
 	left: 40%;
 }
-#form .row input[name='sex']:checked+i{
+.forms .row input[name='sex']:checked+i{
 	background: url(../img/man.png) no-repeat;
 	background-size: cover;
 } 
-#form .agree{
+.forms .agree{
 	font-size: 0.14rem;
 	margin-bottom: 0.2rem;
 	position: relative;
 }
-#form .agree input{
+.forms .agree input{
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 10;
 	opacity: 0;
 }
-#form .agree i{
+.forms .agree i{
 	display: inline-block;
 	width: 0.2rem;
 	height: 0.2rem;
@@ -447,21 +447,21 @@ html{font-size: 100px;}
 	top: 0;
 	z-index: 5;
 }
-#form .agree input:checked+i{
+.forms .agree input:checked+i{
 	background: url(../img/man.png) no-repeat;
 	background-size: cover;
 } 
-#form input::-webkit-input-placeholder{
+.forms input::-webkit-input-placeholder{
 	color: #ccc;
 }
-#form select{
+.forms select{
 	width: 100%;
 	font-size: 0.16rem;
 	color: #333;
 	border: 0;
 	outline: none;
+	background-color: #fff;
 }
-
 /*我的客户*/
 .Customer{
 	width: 100%;
@@ -501,4 +501,23 @@ html{font-size: 100px;}
 	position: absolute;
 	right: 5%;
 	top: 40%;
+}
+/*客户详情*/
+.require{
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+.require p{
+	font-size: 0.16rem;
+	font-weight: bold;
+	padding: 0.1rem 0;
+	color: #333;
+}
+.require div{
+	font-size: 0.16rem;
+	color: #333;
+}
+/*我的身份信息*/
+.iden .rig{
+	text-indent: 5%;
 }
