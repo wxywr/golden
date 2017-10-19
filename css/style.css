@@ -521,3 +521,37 @@ html{font-size: 100px;}
 .iden .rig{
 	text-indent: 5%;
 }
+#personal .maked,.see{
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #fff;
+	font-size: 0.14rem;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	margin-top: -0.12rem;
+	border-radius: 0.03rem;
+}
+#personal .maked{
+	width: 0.4rem;
+	background-color: #3478F3;
+	left: 75%;
+}
+#personal .see{
+	width: 0.5rem;
+	background-color: #333;
+	right: 0;
+}
+#personal .margin{
+	text-indent: 5%;
+}
+.head .edit{
+	font-size: 0.16rem;
+	color: #fff;
+	position: absolute;
+	right: 5%;
+	top: 8%;
+}
+#form-edit input::-webkit-input-placeholder{
+	color: #333;
+}

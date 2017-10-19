@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>个人信息详情</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lCalendar.css">
+</head>
+<body>
+	<div class="head">
+		<a href="javascript:history.go(-1)"></a>个人信息详情
+		<div class="edit">编辑</div>
+	</div>
+	<div class="hd-img">
+		<div class="img"></div>
+	</div>
+	<form action="" id="form-edit" class="forms">
+		<div class="row">
+			<p class="fl row_l">昵称</p> 
+			<p class="fl margin"><input type="text" class="nic font" placeholder="WR"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">姓名</p> 
+			<p class="fl margin"><input type="text" class="username font" placeholder="李四"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">性别</p> 
+			<p class="fl margin rela">男</p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">籍贯</p> 
+			<p class="fl margin"><input type="text" class="prov font" placeholder="上海市黄浦区"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">身份证</p> 
+			<p class="fl margin"><input type="text" class="ident font" placeholder="421140198008188023"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">出生年月</p>
+			<p class="fl margin"><input id="date-s" class="xuan" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" placeholder="1980年06月" /></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">手机</p>
+			<p class="fl margin"><input type="tel" name="phone" class="phone font" placeholder="15877904301"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">邮箱</p> 
+			<p class="fl margin"><input type="text" class="email font" placeholder="13999012380@qq.com"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">联系地址</p>
+			<p class="fl margin"><input type="text" class="contact font" placeholder="上海市浦东新区"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">微信号</p>
+			<p class="fl margin"><input type="text" class="weChat font" placeholder="WRYA"></p>
+		</div>
+		<div class="row no" style="margin-bottom: 1rem;">
+			<p class="row_l">个性签名</p> 
+			<textarea name="ill" rows="7" maxlength="200" class="style"></textarea>
+			<span class="word">200字</span>
+		</div>
+	</form>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/gold.js"></script>
+<script src="js/lCalendar.js"></script>
+<script>
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#date-s',
+		'type': 'date'
+	});
+</script>
+</html>
