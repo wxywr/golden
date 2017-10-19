@@ -1,0 +1,504 @@
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input,textarea,
+td,th,button,strong,em,select,video,canvas{margin:0;padding:0;}
+li{list-style:none;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+img{ border:none; vertical-align:middle;max-width: 100%;display: block;}
+em{ font-style:normal;}
+a{ text-decoration:none;}
+input{outline: none;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+a, img {-webkit-touch-callout: none; }
+html, body {-webkit-user-select: none;   user-select: none;}
+body{font-family: "Helvetica Neue", Helvetica, "STHeiTi", sans-serif; overflow-x:hidden; overflow-y:auto;font-size: 0.14rem;}
+html{font-size: 100px;}
+.fl{float:left;}
+.fr{float:right;}
+/*扫码注册*/
+.head{
+	width: 100%;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	background-color: #3E3A38;
+	color: #fff;
+	font-size: 0.2rem;
+	text-align: center;
+	position: relative;
+}
+.head a{
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url(../img/back.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 5%;
+	top: 0.1rem;
+}
+.alert{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+.alert .wrap{
+	width: 66%;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	margin-left: -33%;
+	border-radius: 0.1rem;
+	font-size: 0.18rem;
+	font-weight: bold;
+}
+.alert .wrap .txt{
+	color: #E70013;
+	border-bottom: 1px solid #ccc;
+	padding: 5%;
+}
+.alert .wrap .ok{
+	color: #3478F3;
+	text-align: center;
+	padding: 0.1rem 0;
+}
+/*注册成功代理商页面*/
+.agent-head{
+	width: 100%;
+	background-color: #87B52F;
+	height: 1.6rem;
+	overflow: hidden;
+	position: relative;
+}
+.agent-head .head-l{
+ 	width: 30%; 
+}
+.agent-head .head-l .img{
+ 	width: 65%; 
+	margin: 0.2rem auto 0;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+.agent-head .head-r{
+	width: 70%;
+}
+.agent-head .head-r .name{
+	color: #fff;
+	font-size: 0.18rem;
+	margin-top: 0.25rem;
+}
+.agent-head .head-r span{
+	display: inline-block;
+	color: #fff;
+	font-size: 0.14rem;
+	border: 1px solid #888;
+	border-radius: 0.1rem;
+	padding: 0 0.1rem;
+	margin-top: 0.2rem;
+}
+.agent-head .set{
+	color: #fff;
+	font-size: 0.16rem;
+	position: absolute;
+	right: 5%;
+	top: 0.25rem;
+}
+.agent-head .groom{
+	color: #fff;
+	font-size: 0.16rem;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+.agent-head .groom i{
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/er.png) no-repeat;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.05rem;
+}
+.same{
+	width: 100%;
+	border-bottom: 3px solid #ccc;
+}
+.same .tit{
+	border-bottom: 1px solid #ccc;
+	text-indent: 5%;
+	color: #333;
+	font-size: 0.18rem;
+	padding: 0.15rem 0 0.05rem;
+	font-weight: bold;
+}
+.union ul{
+	overflow: hidden;
+	padding: 0.2rem 0;
+}
+.union ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	color: #333;
+	font-size: 0.14rem;
+}
+.union ul li i{
+	display: block;
+	width: 46%;
+	height: 0.3rem;
+	margin: 0 auto 0.05rem;
+	background: url(../img/sprite.png) no-repeat;
+	background-size: 135%;
+}
+.union ul li i.a{
+	background-position: -0.05rem -0.05rem;
+}
+.union ul li i.b{
+	background-position: -0.05rem -0.39rem;
+}
+.union ul li i.c{
+	background-position: 0 -0.7rem;
+}
+.union ul li i.d{
+	background-position: 0 -1rem;
+}
+.union ul li i.e{
+	background-position: 0 -1.32rem;
+}
+.seller .sel,.reward .rew{
+	height: 1.45rem;
+}
+.seller .sel i,.reward .rew i{
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: url(../img/sprite.png) no-repeat;
+	background-size: 135%;
+	margin: 0.1rem 0 0 5%;
+}
+.seller .sel i{
+	background-position: -0.03rem -1.35rem;
+}
+.reward .rew i{
+	background-position: -0.05rem -1.67rem;
+}
+/*推荐关系选择*/
+.rela-select{
+	width: 100%;
+	margin-top: 1rem; 
+}
+.rela-select div{
+	background-color: #82B926;
+	width: 70%;
+	margin: 0.2rem auto;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #fff;
+	font-size: 0.18rem;
+	text-align: center;
+	letter-spacing: 0.06rem;
+	border-radius: 0.02rem;
+}
+/*我的个人信息*/
+.my-info,.enroll{
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	margin-top: 0.1rem;
+}
+.my-info div{
+	width: 95%;
+	margin-left: 5%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.18rem;
+	color: #333;
+}
+.my-info .details{
+	border-bottom: 1px solid #ccc;
+}
+.enroll{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-indent: 5%;
+	font-size: 0.18rem;
+	color: #333;
+}
+.my-info i,.enroll i{
+	display: inline-block;
+	width: 0.26rem;
+	height: 0.26rem;
+	background: url(../img/go.png) no-repeat;
+	background-size: cover;
+	float: right;
+	margin:  0.07rem 2% 0 0;
+}
+.join-date{
+	font-size: 0.14rem;
+	color: #888;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+/*我的团队*/
+.area{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #ccc;
+	font-size: 0.18rem;
+	color: #333;
+	text-indent: 5%;
+}
+.area span,.leaguer span{
+	display: inline-block;
+	float: right;
+	margin-right: 5%;
+}
+.leaguer{
+	width: 95%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #ccc;
+	font-size: 0.18rem;
+	color: #333;
+	margin-left: 5%;
+}
+.leag{
+	width: 90%;
+	margin: 0 auto;
+}
+.leag li{
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	font-size: 0.16rem;
+	overflow: hidden;
+	position: relative;
+}
+.leag li .left{
+	width: 30%;
+}
+.leag li .right{
+	width: 70%;
+	color: #333;
+	font-size: 0.18rem;
+}
+.leag li .left .head{
+	width: 70%;
+	height: 0.7rem;
+	background-color: #333;
+	margin: 0.1rem 0;
+	border-radius: 50%;
+}
+.leag li .right .name{
+	margin: 0.18rem 0 0.05rem;
+}
+.leag li .right i{
+	display: block;
+	width: 0.26rem;
+	height: 0.26rem;
+	background: url(../img/go.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 30%;
+}
+/*个人信息注册*/
+.hd-img .img{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.3rem auto;
+    border-radius: 50%;
+    background: url(../img/head.png) no-repeat;
+    background-size: cover;
+}
+.font {
+    font-size: 0.16rem;
+    font-family: '微软雅黑';
+}
+#form{
+	width: 90%;
+	margin: 0 auto;
+}
+#form .row{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding: 0.1rem 0;
+	overflow: hidden;
+}
+#form .no{
+	border-bottom: 0;
+	position: relative;
+}
+#form .margin{
+	width: 70%;
+	font-size: 0.16rem;
+}
+#form .row_l{
+	width: 30%;
+	font-size: 0.16rem;
+	font-weight: bold;
+}
+#form .nic,.username,.prov,.ident,.phone,.email,.contact,.weChat{
+	width: 90%;
+	border: 0;
+	background-color: #fff;
+}
+#form .male{
+	position: absolute;
+	left: 0;
+	top: 0.02rem;
+	z-index: 10;
+	opacity: 0;
+}
+#form .female{
+	position: absolute;
+	left: 35%;
+	top: 0.02rem;
+	z-index: 10;
+	opacity: 0;
+}
+#form textarea{
+	outline: none;
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	margin: 0.1rem 0 0;
+	width: 96%;
+	font-size: 0.16rem;
+	font-family: '微软雅黑';
+	padding: 0.05rem;
+}
+#form .word{
+	color: #979797;
+	font-size: 0.14rem;
+	position: absolute;
+	right: 0.1rem;
+	bottom: 0.35rem;
+}
+#form .submit{
+	display: block;
+	width: 60%;
+	margin: 0 auto 0.3rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #82B926;
+	color: #fff;
+	outline: none;
+	border: 0;
+	font-size: 0.16rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	border-radius: 0.03rem;
+}
+#form .row i{
+	width: 0.2rem;
+	height: 0.2rem;
+	display: inline-block;
+	position: absolute;
+	z-index: 5;
+}
+#form .rela{
+	position: relative;
+}
+#form .row i.r-man{
+	left: 0;
+	background: url(../img/woman.png) no-repeat;
+	background-size: cover;
+}
+#form .row i.r-woman{
+	left: 35%;
+	background: url(../img/woman.png) no-repeat;
+	background-size: cover;
+}
+#form .row label.boy{
+	position: absolute;
+	left: 5%;
+}
+#form .row label.girl{
+	position: absolute;
+	left: 40%;
+}
+#form .row input[name='sex']:checked+i{
+	background: url(../img/man.png) no-repeat;
+	background-size: cover;
+} 
+#form .agree{
+	font-size: 0.14rem;
+	margin-bottom: 0.2rem;
+	position: relative;
+}
+#form .agree input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	opacity: 0;
+}
+#form .agree i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/woman.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+#form .agree input:checked+i{
+	background: url(../img/man.png) no-repeat;
+	background-size: cover;
+} 
+#form input::-webkit-input-placeholder{
+	color: #ccc;
+}
+#form select{
+	width: 100%;
+	font-size: 0.16rem;
+	color: #333;
+	border: 0;
+	outline: none;
+}
+
+/*我的客户*/
+.Customer{
+	width: 100%;
+}
+.Customer li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.Customer li .l{
+	width: 30%;
+}
+.Customer li .r{
+	width: 70%;
+	color: #333;
+	position: relative;
+}
+.Customer li .l .img{
+	width: 60%;
+	height: 0.7rem;
+	border: 1px solid #82B926;
+	border-radius: 50%;
+	margin: 0.1rem auto;
+}
+.Customer li .r .name{
+	font-size: 0.18rem;
+	margin: 0.18rem 0 0.12rem;
+	font-weight: bold;
+}
+.Customer li .r .num{
+	font-size: 0.14rem;
+}
+.Customer li .r .go{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url(../img/go.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 5%;
+	top: 40%;
+}
